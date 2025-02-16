@@ -146,10 +146,7 @@ void redraw()
 
     for (size_t i = 0; i < total_pixels; i++)
     {
-        if (i < width * 40)
-            pixel_ptr[i] = 0xFF121212;
-        else
-            pixel_ptr[i] = 0xFF1E1E1E;
+        pixel_ptr[i] = 0xCC000000;
     }
 
     wl_surface_attach(surface, buffer, 0, 0);
